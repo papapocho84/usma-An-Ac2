@@ -10,6 +10,7 @@ import { Product } from '../productos/productos.component';
 export class ProductoComponent implements OnInit {
   constructor(private activatedRoute: ActivatedRoute, private router: Router) { }
   returnToProducts() {
+    this.router.navigate(['products'])
   }
   products: Product[] = [
     {

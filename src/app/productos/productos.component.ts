@@ -10,7 +10,7 @@ import {ActivatedRoute, Router } from '@angular/router';
 export class ProductosComponent {
 constructor(private activatedRoute: ActivatedRoute, private router: Router) { }
 returnLogin() {
-
+  this.router.navigate([''])
 }
 
   products: Product[] = [
